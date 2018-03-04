@@ -1,0 +1,80 @@
+package datastructures;
+
+public class MergeSortEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]={1,65,432,5,43,8,43,88};
+		mergeSort(a);
+		
+		for(int i=0;i<8;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+		
+		
+
+	}
+
+	private static void mergeSort(int[] a) {
+		// TODO Auto-generated method stub
+		
+		int n=a.length;
+		if(n<2)
+			return;
+	
+		int mid=n/2;
+		
+		int leftArray[]=new int[mid];
+		int rightArray[]=new int[n-mid];
+		for(int i=0;i<mid;i++)
+			leftArray[i]=a[i];
+		for(int i=mid;i<n;i++)
+			rightArray[i-mid]=a[i];
+		
+		mergeSort(leftArray);
+		mergeSort(rightArray);
+merge(leftArray,rightArray,a);		
+		 
+	}
+
+	private static void merge(int[] leftArray, int[] rightArray, int[] a) {
+		// TODO Auto-generated method stub
+		int nL=leftArray.length;
+		int nR=rightArray.length;
+		int i=0,j=0,k=0;
+		while(i<nL && j<nR)
+		{
+			if(leftArray[i]<=rightArray[j])
+			{
+				a[k]=leftArray[i];
+				
+				i++;
+			}
+			
+			else
+			{	
+			a[k]=rightArray[j];
+			
+			j++;
+			}
+			k++;
+			
+		}
+		
+		while(i<nL)
+		{
+			a[k]=leftArray[i];
+			k++;
+			i++;
+		}
+		while(j<nR)
+		{
+			a[k]=rightArray[j];
+			k++;
+			j++;
+		}
+	}
+
+}

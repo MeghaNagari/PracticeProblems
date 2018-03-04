@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ArrayEx.java&apos; to &apos;JavaPracticeEx/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;ServletPractice&apos;&#x0D;&#x0A;- Destination element: &apos;JavaPracticeEx/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;com.niit.ArrayEx.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=JavaPracticeEx/src&lt;" element1="/src&lt;com.niit{ArrayEx.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1511419742672" units="1" version="1.0"/>
+</session>

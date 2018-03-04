@@ -1,0 +1,38 @@
+
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		int a[]={4,9,5,3,2};
+		int min=0;
+		
+	for(int i=0;i<5;i++)
+	{		for(int j=i+1;j<5;j++)
+			{
+		min=a[i];
+		int l=a.length-1;
+			if(a[j]<min)
+				min=a[j];
+		
+		}
+	
+	 while(l>i)
+		{a[l]=a[l-1];
+		l--;
+		}
+	 
+	 a[i]=min;
+	
+		
+	
+			
+	}		
+			for(int k=0;k<5;k++)
+       System.out.println(a[k]);
+		
+	}
+
+}

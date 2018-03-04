@@ -1,0 +1,4 @@
+127.0.0.1 - - [16/Jan/2018:20:39:10 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [16/Jan/2018:20:39:11 +0530] "GET /ServletPractice/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Jan/2018:20:39:18 +0530] "POST /ServletPractice/welcome HTTP/1.1" 200 50
+0:0:0:0:0:0:0:1 - - [16/Jan/2018:20:39:47 +0530] "GET /ServletPractice/index.html HTTP/1.1" 200 302

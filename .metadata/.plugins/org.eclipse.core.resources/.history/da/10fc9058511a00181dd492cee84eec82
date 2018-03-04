@@ -1,0 +1,13 @@
+import java.util.LinkedList;
+
+public class LinkedListEx {
+
+	public static void main(String[] args) {
+		
+		LinkedList<E> obj=new LinkedList<>();
+		obj.
+		
+		
+	}
+
+}

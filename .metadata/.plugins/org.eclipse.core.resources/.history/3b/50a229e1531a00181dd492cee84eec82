@@ -1,0 +1,66 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class LinkedListEx {
+
+	public static void main(String[] args) {
+		
+		System.out.println("enter number of employees details");
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		String eid,ename,sal;
+		Employee e=new Employee();
+		LinkedList<Employee> li=new LinkedList<>();
+		for(int i=1;i<=n;i++)
+		{
+			
+			System.out.println("enter eid,ename,sal");
+			
+				eid=s.next();
+				e.seteId(eid);
+				ename=s.next();
+				e.seteName(ename);
+				sal=s.next();
+				e.setSal(sal);
+				
+		
+			
+			li.add(e);
+			
+			
+			
+		}
+		
+		Iterator i=li.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		
+		
+		
+		
+		
+			Iterator<Employee> itr=li.iterator();
+			while(itr.hasNext())
+			{
+				e1=itr.next();
+				System.out.print(e1.geteId()+"\t"+e1.geteName()+"\t"+e1.getSal());
+			}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
