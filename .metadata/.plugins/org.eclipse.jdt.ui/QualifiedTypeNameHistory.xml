@@ -39,5 +39,8 @@
 <fullyQualifiedTypeName name="Employee"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="datastructures.BinaryTreeByMe"/>
+<fullyQualifiedTypeName name="datastructures.BinarySearch"/>
+<fullyQualifiedTypeName name="datastructures.BinaryTreeEx"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

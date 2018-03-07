@@ -1,0 +1,95 @@
+package datastructures;
+
+public class BTree {
+	
+	
+	Node root;
+	
+	
+	public void addNode(int key,String name)
+	{
+		Node newNode=new Node(key,name);
+		
+		
+		if(root==null)
+		
+			root=newNode;
+		else{
+		
+			Node currentNode=root;
+			
+		
+		while(true)
+		{
+			
+		if(key<currentNode.key)
+		{
+			if(currentNode.leftChild==null)
+				currentNode.leftChild=newNode;
+			
+			else
+				
+				currentNode=currentNode.leftChild;
+			root=currentNode;
+			return;
+			
+			
+		}
+		else
+			
+		{
+			
+				if(currentNode.rightChild==null)
+					currentNode.rightChild=newNode;
+				else
+					currentNode=currentNode.rightChild;
+				root=currentNode;
+				return;
+			
+		}
+			
+			 
+		
+		
+		
+	}
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+	}
+	
+	public void preOrder(Node node)
+	{
+		if(node!=null)
+		{	
+		System.out.println(node.key+" "+node.name);
+		preOrder(node.leftChild);
+		preOrder(node.rightChild);
+		
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		BTree bt=new BTree();
+		bt.addNode(50, "Bodd");
+		bt.addNode(25, "Vice Pres");
+		bt.addNode(15, "Office Manager");
+		bt.addNode(30, "Secretary");
+		bt.addNode(75,"Sales Manager");
+		bt.addNode(85, "Salesman 1");
+		bt.preOrder(bt.root);
+
+	}
+
+}

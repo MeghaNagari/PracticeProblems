@@ -28,6 +28,11 @@ public class Employee {
 	}
 	
 	
+	public String toString()
+	{
+		return eId+" "+eName+" "+" "+sal;
+	}
+	
 	
 
 }

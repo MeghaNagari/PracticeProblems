@@ -1,0 +1,63 @@
+package datastructures;
+
+public class ReferenceVarAsFormalParam {
+	
+	public static void main(String[] args)
+	{
+		
+		Employee e2=new Employee();
+		e2.seteId("44");
+				e2.seteName("actual param");
+				e2.setSal("50000");
+				System.out.println(e2);
+				
+				
+				
+				referenceReflection(e2);
+				
+				System.out.println(e2);
+				
+				
+				referenceReflection2(e2);
+				
+				System.out.println(e2);
+				
+				e2=null;
+				
+				System.out.println(e2);
+
+					
+					
+			}
+
+		
+			private static void referenceReflection2(Employee e) {
+		// TODO Auto-generated method stub
+		
+				e=null;
+				
+				
+				
+	}
+
+
+			private static void referenceReflection(Employee e) {
+				// TODO Auto-generated method stub
+				
+				
+				e.seteId("774");
+				e.setSal("1000000");
+				
+				
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

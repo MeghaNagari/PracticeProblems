@@ -1,0 +1,40 @@
+package datastructures;
+
+public class Data {
+	
+	private int key;
+	private String name;
+	public int getKey() {
+		return key;
+	}
+	public void setKey(int key) {
+		this.key = key;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	private Data left;
+	private Data right;
+	public Data getLeft() {
+		return left;
+	}
+	public void setLeft(Data left) {
+		this.left = left;
+	}
+	public Data getRight() {
+		return right;
+	}
+	public void setRight(Data right) {
+		this.right = right;
+	}
+	
+	
+	
+	
+	
+	
+
+}

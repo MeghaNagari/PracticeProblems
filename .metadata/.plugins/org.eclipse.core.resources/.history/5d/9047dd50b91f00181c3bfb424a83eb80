@@ -1,0 +1,32 @@
+package datastructures;
+
+public class BinaryTreeByMe {
+	
+	Data currentData;
+	
+	public void addData(Data data)
+	{
+		if(data.getKey()<currentData.getKey())
+		{
+			if(currentData.getLeft() == null)
+				currentData.setLeft(data);
+		}
+		if(data.getKey()>currentData.getKey())
+		{
+			if(currentData.getRight()==null)
+				currentData.setRight(data);
+		}
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		
+	}
+
+}

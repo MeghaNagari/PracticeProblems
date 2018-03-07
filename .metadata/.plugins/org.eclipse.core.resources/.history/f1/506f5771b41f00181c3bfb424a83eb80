@@ -1,0 +1,20 @@
+package datastructures;
+
+public class Node {
+
+	int key;
+	String name;
+	Node left;
+	Node right;
+	
+	Node(int key,String name)
+	{
+		this.name=name;
+		this.key=key;
+	}
+	
+	
+	
+	
+	
+}

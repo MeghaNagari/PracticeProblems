@@ -1,0 +1,15 @@
+package datastructures;
+
+public class Data {
+	
+	
+	private Data left;
+	private Data right;
+	
+	
+	
+	
+	
+	
+
+}

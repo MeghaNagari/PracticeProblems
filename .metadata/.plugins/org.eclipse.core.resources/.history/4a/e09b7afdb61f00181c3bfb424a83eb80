@@ -1,0 +1,42 @@
+package datastructures;
+
+public class BinaryTree2 {
+	
+	
+	Node currentNode;
+	
+	
+	public void addNode(Node newNode)
+	{
+		if(newNode.key<currentNode.key)
+			
+		{
+			if(currentNode.left.key != null)
+			{
+			
+				
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		BinaryTree bt=new BinaryTree()
+		
+		
+		
+	}
+
+}

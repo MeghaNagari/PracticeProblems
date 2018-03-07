@@ -1,0 +1,43 @@
+package datastructures;
+
+public class BinaryTreeByMe {
+	
+	Data currentData=null;
+	
+	public void addData(Data data)
+	{
+		if(data.getKey()<currentData.getKey())
+		{
+			if(currentData.getLeft() == null)
+				currentData.setLeft(data);
+			else 
+				currentData.setRight(data);
+				
+		}
+		if(data.getKey()>currentData.getKey())
+		{
+			if(currentData.getRight()==null)
+				currentData.setRight(data);
+			else
+				currentData.setLeft(data);
+			
+		}
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+BinaryTreeByMe bt=new BinaryTreeByMe();
+Data data=new Data();
+data.setKey(55);
+data.setName("Megha");
+
+bt.addData(data);
+		
+		
+		
+	}
+
+}
