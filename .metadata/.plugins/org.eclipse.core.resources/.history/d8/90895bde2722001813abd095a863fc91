@@ -8,7 +8,7 @@ public class ReferenceVarAsFormalParam {
 		e2.seteId("44");
 		e2.seteName("actual param");
 		e2.setSal("50000");
-//		System.out.println(e2);
+		System.out.println(e2);
 
 		// referenceReflection(e2);
 		//
@@ -33,11 +33,11 @@ public class ReferenceVarAsFormalParam {
 		e2.seteName("Employee 4");
 		e2.setSal("90000");
 
-//		displayEmloyee(e2);
-//		displayEmloyee(e3);
+		displayEmloyee(e2);
+		displayEmloyee(e3);
 		displayEmloyee(e4);
-		deleteEmployee(e4);
-		displayEmloyee(e4);
+		deleteEmployee(e3);
+		displayEmloyee(e3);
 		
 		
 	}
@@ -66,6 +66,6 @@ public class ReferenceVarAsFormalParam {
 //		e.seteId("774");
 //		e.setSal("1000000");
 
-//	}
+	}
 
 }

@@ -33,11 +33,11 @@ public class ReferenceVarAsFormalParam {
 		e2.seteName("Employee 4");
 		e2.setSal("90000");
 
-//		displayEmloyee(e2);
-//		displayEmloyee(e3);
+		displayEmloyee(e2);
+		displayEmloyee(e3);
 		displayEmloyee(e4);
-		deleteEmployee(e4);
-		displayEmloyee(e4);
+		deleteEmployee(e3);
+		displayEmloyee(e3);
 		
 		
 	}
